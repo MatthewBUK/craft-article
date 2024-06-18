@@ -489,7 +489,7 @@ class Article extends Field
      * @throws InvalidConfigException
      *
      */
-    protected function inputHtml($value, ElementInterface $element = null): string
+    protected function inputHtml(mixed $value, ?ElementInterface $element = null, bool $inline = false): string
     {
         // register the asset/article bundles
         $view = Craft::$app->getView();
