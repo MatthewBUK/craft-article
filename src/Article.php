@@ -718,7 +718,7 @@ class Article extends Field
     private function _getSectionSources(Element $element = null): array
     {
         $sources = [];
-        $sections = Craft::$app->getSections()->getAllSections();
+        $sections = Craft::$app->getEntries()->getAllSections();
         $showSingles = false;
 
         // Get all sites
